@@ -1,0 +1,49 @@
+document.getElementById('section-footer').innerHTML = `
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo_with_background.jpeg" alt="Neura Logo">
+          <span class="lang-en">Neura</span>
+          <span class="lang-ar">نيورا</span>
+        </div>
+        <p class="lang-en">Empowering mathematics teachers to excel in international education through professional training and modern methodologies.</p>
+        <p class="lang-ar">تمكين معلمي الرياضيات للتميز في التعليم العالمي من خلال التدريب المهني والمنهجيات الحديثة.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="lang-en">Quick Links</h4>
+        <h4 class="lang-ar">روابط سريعة</h4>
+        <ul>
+          <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+          <li><a href="#benefits"><span class="lang-en">Benefits</span><span class="lang-ar">المميزات</span></a></li>
+          <li><a href="#levels"><span class="lang-en">Levels</span><span class="lang-ar">المستويات</span></a></li>
+          <li><a href="#method"><span class="lang-en">Method</span><span class="lang-ar">الطريقة</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="lang-en">Contact</h4>
+        <h4 class="lang-ar">تواصل معنا</h4>
+        <ul>
+          <li><a href="mailto:info@neura.com"><i class="fas fa-envelope"></i> info@neura.com</a></li>
+          <li><a href="tel:+1234567890"><i class="fas fa-phone"></i> +1 234 567 890</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> <span class="lang-en">Online &mdash; Worldwide</span><span class="lang-ar">أونلاين &mdash; حول العالم</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="lang-en">Follow Us</h4>
+        <h4 class="lang-ar">تابعنا</h4>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><span class="lang-en">Made BY Yz technology solutions</span><span class="lang-ar">من تصميم Yz technology solutions</span></p>
+    </div>
+  </div>
+</footer>`;

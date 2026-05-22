@@ -1,0 +1,151 @@
+.cta {
+  position: relative;
+  padding: 120px 0;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  overflow: hidden;
+}
+
+.cta-container {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.cta-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
+}
+
+body.lang-arabic .cta-badge {
+  font-family: 'Tajawal', sans-serif;
+  letter-spacing: 0;
+}
+
+.cta-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+body.lang-arabic .cta-title {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 800;
+}
+
+.cta-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 36px;
+}
+
+body.lang-arabic .cta-text {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta-shape {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cta-shape-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.03);
+  top: -100px;
+  right: -100px;
+  animation: floatUp 8s ease-in-out infinite;
+}
+
+.cta-shape-2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.04);
+  bottom: -80px;
+  left: -80px;
+  animation: floatUp 10s ease-in-out infinite 1s;
+}
+
+.cta-shape-3 {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  top: 50%;
+  left: 20%;
+  animation: floatUp 6s ease-in-out infinite 0.5s;
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 80px 0;
+  }
+
+  .cta-title {
+    font-size: 32px;
+  }
+
+  .cta-text {
+    font-size: 15px;
+  }
+
+  .cta-shape-3 { display: none; }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 60px 0;
+  }
+
+  .cta-title {
+    font-size: 26px;
+  }
+
+  .cta-text {
+    font-size: 14px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .cta-shape-1,
+  .cta-shape-2 {
+    display: none;
+  }
+}

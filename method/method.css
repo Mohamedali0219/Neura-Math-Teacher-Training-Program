@@ -1,0 +1,129 @@
+.method {
+  background: var(--white);
+  position: relative;
+}
+
+.method-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.method-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+  background: var(--bg-light);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.method-step:hover {
+  transform: translateX(6px);
+  box-shadow: var(--shadow);
+  border-color: transparent;
+}
+
+body.lang-arabic .method-step:hover {
+  transform: translateX(-6px);
+}
+
+.method-step-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: var(--white);
+  position: relative;
+  box-shadow: 0 4px 15px rgba(6, 35, 189, 0.2);
+}
+
+.method-step-dot {
+  display: none;
+}
+
+.method-step-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+body.lang-arabic .method-step-content h3 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+}
+
+.method-step-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-gray);
+}
+
+body.lang-arabic .method-step-content p {
+  font-family: 'Tajawal', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .method-step {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  body.lang-arabic .method-step {
+    text-align: center;
+  }
+
+  .method-step-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    font-size: 22px;
+    margin: 0 auto;
+  }
+
+  .method-step:hover {
+    transform: translateY(-4px);
+  }
+
+  body.lang-arabic .method-step:hover {
+    transform: translateY(-4px);
+  }
+
+  .method-step-content h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .method-step {
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .method-step-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    font-size: 18px;
+  }
+
+  .method-step-content h3 {
+    font-size: 16px;
+  }
+
+  .method-step-content p {
+    font-size: 13px;
+  }
+}
