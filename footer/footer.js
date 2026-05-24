@@ -25,8 +25,8 @@ document.getElementById('section-footer').innerHTML = `
         <h4 class="lang-en">Contact</h4>
         <h4 class="lang-ar">تواصل معنا</h4>
         <ul>
-          <li><a href="https://wa.me/201090023648"><i class="fab fa-whatsapp"></i> 01090023648</a></li>
-          <li><a href="tel:+201060019646"><i class="fas fa-phone"></i> 01060019646</a></li>
+          <li><a href="https://wa.me/201060019646"><i class="fab fa-whatsapp"></i> 01060019646</a></li>
+          <li><a href="tel:+201090023648"><i class="fas fa-phone"></i> 01090023648</a></li>
           <li><a href="#"><i class="fas fa-map-marker-alt"></i> <span class="lang-en">Online &mdash; Worldwide</span><span class="lang-ar">أونلاين &mdash; حول العالم</span></a></li>
         </ul>
       </div>
