@@ -23,26 +23,6 @@ function toggleLanguage() {
   updateLangButtons();
 }
 
-function initMobileMenu() {
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
-  if (!hamburger || !navLinks) return;
-
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
-    document.body.classList.toggle('no-scroll');
-  });
-
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      navLinks.classList.remove('active');
-      document.body.classList.remove('no-scroll');
-    });
-  });
-}
-
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -69,6 +49,5 @@ function initScrollAnimations() {
 }
 
 initLanguageToggle();
-initMobileMenu();
 initSmoothScroll();
 initScrollAnimations();

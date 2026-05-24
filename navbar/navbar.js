@@ -12,9 +12,6 @@ document.getElementById('section-navbar').innerHTML = `
       <li><a href="#levels"><span class="lang-en">Levels</span><span class="lang-ar">المستويات</span></a></li>
       <li><a href="#method"><span class="lang-en">Method</span><span class="lang-ar">الطريقة</span></a></li>
       <li><a href="#cta"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بنا</span></a></li>
-      <li class="nav-lang-mobile">
-        <button id="langBtnMobile" class="lang-btn" onclick="toggleLanguage()">AR</button>
-      </li>
     </ul>
     <div class="nav-actions">
       <button id="langBtn" class="lang-btn" onclick="toggleLanguage()">AR</button>
