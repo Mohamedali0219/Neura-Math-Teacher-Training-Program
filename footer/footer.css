@@ -138,6 +138,43 @@ body.lang-arabic .footer-links-col ul a:hover {
   color: rgba(255, 255, 255, 0.4);
 }
 
+.footer-brand-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-direction: row-reverse;
+}
+
+body.lang-arabic .footer-brand-link {
+  flex-direction: row;
+}
+
+.footer-brand-link:hover {
+  color: var(--white);
+}
+
+.footer-brand-link:hover .footer-brand-img {
+  filter: brightness(1.2);
+}
+
+.footer-brand-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.footer-copyright {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
 @media (max-width: 1024px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;

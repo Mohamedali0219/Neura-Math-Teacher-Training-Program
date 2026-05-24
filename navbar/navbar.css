@@ -149,8 +149,7 @@ body.no-scroll {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(20px);
+    background: var(--white);
     flex-direction: column;
     justify-content: flex-start;
     padding: 40px 24px;
@@ -176,6 +175,13 @@ body.no-scroll {
     width: 100%;
     text-align: center;
     border-radius: 12px;
+    color: var(--text-dark);
+  }
+
+  .nav-links a.active,
+  .nav-links a:hover {
+    background: var(--primary);
+    color: var(--white);
   }
 
   body.lang-arabic .nav-links a {
