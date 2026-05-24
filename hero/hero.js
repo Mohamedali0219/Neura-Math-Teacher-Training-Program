@@ -31,6 +31,13 @@ document.getElementById('section-hero').innerHTML = `
           <span class="hero-stat-label lang-ar">% أونلاين</span>
         </div>
       </div>
+      <div class="hero-guarantee">
+        <i class="fas fa-shield-alt"></i>
+        <div>
+          <span class="lang-en">Money Back Guaranteed</span>
+          <span class="lang-ar">ضمان استرداد الأموال</span>
+        </div>
+      </div>
     </div>
     <div class="hero-visual" data-animate="fade-right">
       <div class="hero-image-wrapper">

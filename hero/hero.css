@@ -125,7 +125,7 @@ body.lang-arabic .hero-subtitle {
   animation: floatUp 5s ease-in-out infinite;
   z-index: 2;
   position: relative;
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
 .hero-shape {
@@ -210,11 +210,43 @@ body.lang-arabic .hero-card-3 {
   left: 10%;
 }
 
+.hero-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: rgba(6, 35, 189, 0.06);
+  border: 1px solid rgba(6, 35, 189, 0.12);
+  border-radius: var(--radius);
+  margin-top: 24px;
+  max-width: 280px;
+}
+
+.hero-guarantee i {
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.hero-guarantee span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+body.lang-arabic .hero-guarantee span {
+  font-family: 'Tajawal', sans-serif;
+}
+
+body.lang-arabic .hero-guarantee {
+  margin-left: 0;
+  margin-right: auto;
+}
+
 @media (max-width: 1024px) {
   .hero-title { font-size: 40px; }
   .hero-container { gap: 40px; }
   .hero-image-wrapper { width: 320px; height: 320px; }
-  .hero-main-logo { width: 140px; border-radius: 16px; }
+  .hero-main-logo { width: 140px; border-radius: 50%; }
   .hero-shape-1 { width: 260px; height: 260px; }
   .hero-shape-2 { width: 200px; height: 200px; }
 }
@@ -256,13 +288,13 @@ body.lang-arabic .hero-card-3 {
   }
 
   .hero-image-wrapper {
-    width: 260px;
-    height: 260px;
+    width: 320px;
+    height: 320px;
   }
 
   .hero-main-logo {
-    width: 100px;
-    border-radius: 14px;
+    width: 160px;
+    border-radius: 50%;
   }
 
   .hero-shape-1 { width: 220px; height: 220px; }
@@ -286,9 +318,14 @@ body.lang-arabic .hero-card-3 {
   .hero-stats { gap: 20px; }
   .hero-stat-number { font-size: 24px; }
   .hero-stat-label { font-size: 11px; }
-  .hero-image-wrapper { width: 200px; height: 200px; }
-  .hero-main-logo { width: 80px; border-radius: 12px; }
+  .hero-image-wrapper { width: 280px; height: 280px; }
+  .hero-main-logo { width: 140px; border-radius: 50%; }
   .hero-shape-1 { width: 170px; height: 170px; }
   .hero-shape-2 { width: 130px; height: 130px; }
   .hero-card { display: none; }
+
+  .hero-guarantee {
+    margin: 24px auto 0;
+    max-width: 300px;
+  }
 }
