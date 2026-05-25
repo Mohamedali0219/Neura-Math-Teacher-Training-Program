@@ -211,15 +211,15 @@ body.lang-arabic .hero-card-3 {
 }
 
 .hero-guarantee {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 20px;
-  background: rgba(6, 35, 189, 0.06);
-  border: 1px solid rgba(6, 35, 189, 0.12);
-  border-radius: var(--radius);
   margin-top: 24px;
-  max-width: 280px;
+}
+
+.hero-guarantee-img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero-guarantee i {
@@ -325,7 +325,12 @@ body.lang-arabic .hero-guarantee {
   .hero-card { display: none; }
 
   .hero-guarantee {
+    display: flex;
+    justify-content: center;
     margin: 24px auto 0;
-    max-width: 300px;
+  }
+
+  .hero-guarantee-img {
+    width: 100px;
   }
 }
